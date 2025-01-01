@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           // Assignment05C#OOP02
 
              Person[] people = new Person[3];
 
-            people[0] = new Person("Ahmed",22);
+            people[0] = new Person("Mohamed",19);
             people[1] = new Person("Sherouk", 23);
             people[2] = new Person("Eman", 19);
 
