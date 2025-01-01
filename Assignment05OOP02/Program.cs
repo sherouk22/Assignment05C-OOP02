@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 
 namespace Assignment05OOP02
 {
@@ -6,7 +7,7 @@ namespace Assignment05OOP02
     {
         static void Main(string[] args)
         {
-            // Assignment05C#OOP02
+
 
             #region Q1   Define a struct "Person" with properties "Name" and "Age".
 
@@ -22,32 +23,68 @@ namespace Assignment05OOP02
             //}
 
             #endregion
-            #region MyRegion
 
-            Console.WriteLine("Enter the first point:");
-            Console.Write("X1: ");
-            double X1 = double.Parse(Console.ReadLine());
-            Console.Write("Y1: ");
-            double Y1 = double.Parse(Console.ReadLine());
+            #region Q2   Create a struct called "Point" to represent a 2D point with properties "X" and "Y"
+
+            //Console.WriteLine("Enter the first point:");
+            //Console.Write("X1: ");
+            //double X1 = double.Parse(Console.ReadLine());
+            //Console.Write("Y1: ");
+            //double Y1 = double.Parse(Console.ReadLine());
 
 
 
-            Console.WriteLine("Enter the Second point:");
-            Console.Write("X2: ");
-            double X2 = double.Parse(Console.ReadLine());
-            Console.Write("Y2: ");
-            double Y2 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the Second point:");
+            //Console.Write("X2: ");
+            //double X2 = double.Parse(Console.ReadLine());
+            //Console.Write("Y2: ");
+            //double Y2 = double.Parse(Console.ReadLine());
 
-            Point point1 = new Point(X1, Y1);
-            Point point2 = new Point(X2, Y2);
+            //Point point1 = new Point(X1, Y1);
+            //Point point2 = new Point(X2, Y2);
 
-            double distance = Math.Sqrt(Math.Pow(point1.X - point2.X, 2) + Math.Pow(point1.Y - point2.Y, 2));
+            //double distance = Math.Sqrt(Math.Pow(point1.X - point2.X, 2) + Math.Pow(point1.Y - point2.Y, 2));
 
-            Console.WriteLine($"The distance={distance}");
+            //Console.WriteLine($"The distance={distance}");
 
 
             #endregion
 
+            #region Q3   Create a struct called "Person" with properties "Name" and "Age"
+
+
+            //Person02[] Persons = new Person02[3];
+
+            //for (int i = 0; i < Persons.Length; i++) 
+            //{
+
+            //    Console.WriteLine($"Enter details for person {i + 1}:");
+            //    Console.Write("Name: ");
+            //    string name = Console.ReadLine();
+
+            //    Console.Write("Age: ");
+            //    int age  =int.Parse(Console.ReadLine());
+
+            //    Persons[i] = new Person02(name, age);
+            //}
+
+
+
+            //  Person02 oldest_person = Persons[0];
+
+            //foreach (Person02 person in Persons)
+            //{
+            //    if (person.Age > oldest_person.Age)
+            //    {
+            //        oldest_person = person;
+            //    }
+
+            //}
+
+
+            //Console.WriteLine($"The oldest person is {oldest_person.Name} and age of {oldest_person.Age}.");
+
+            #endregion
 
 
         }
